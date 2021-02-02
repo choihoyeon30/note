@@ -1,0 +1,20 @@
+1. location.href(js)
+ - 페이지 이동이 일어난다. 유지가 되지 않는다(유지 하기 위해서는 쿠키 or 세션이 필요)
+2. sendredirect(jsp)
+ - 위와 같다 jsp html단일뿐 (시점이 더 빠르다)
+3. $ajax(jquery)
+ - url이 바뀌지 않는다. 유지가 된다.(EX 자동 완성)
+4. view.forward(req,res)
+ - 전체가 바뀐다. url은 그대로, request에 담으면 유지가 된다(session은 당연).select할때 forward 쓰기
+5. data-options="url:a.jsp"
+ - 3번과 같다
+
+동기 : 
+비동기 : 페이지 이동없이;몰래 통신하는것
+
+값이 유지
+유지X
+
+1,2
+3,5
+4

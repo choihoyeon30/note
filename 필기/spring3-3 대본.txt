@@ -1,0 +1,42 @@
+.test가 들어오니 web.xml에서 인터셉트
+디스패처서블릿(프로젝트당 1개)
+/WEB-INF/spring-servlet.xml로 고고
+/member/login.test가 들어왔다
+simpleUrlHandlerMapping
+member-controller
+빈 아이디 member-controller 고고
+빈 아이디 member-controller에 적혀있는 클래스로 이동
+MemberLogic setter객체주입
+propertiesPathNameResolver을 참조
+url 맞춰서 login메서드 실행하게~
+실행하다가 로직 만나네!근데 빈에 member-logic
+참조하는 내용이 있네!
+빈이 member-logic인 애를 찾아야지
+spring-service에 있구만
+com.spring.mvc1.MemberLogic 가야지
+SqlMemberDao setter객체주입
+sqlMemberDao 두두등장
+sql-member-dao이름인 빈 찾아야지!
+spring-data.xml에 있네
+com.spring.mvc1.SqlMemberDao 가야지
+SqlSessionTemplate setter객체주입
+sqlSessionTemplate 두두등장
+ref="sqlSessionTemplate"하네
+sqlSessionTemplate인 빈 아이디 가야지
+<constructor-arg index="0" ref="sqlSessionFactory"/>
+sqlSessionFactory참조하네
+sqlSessionFactory인 빈아이디 가야지
+value="WEB-INF/mybatis-config.xml
+data-source-target참조하네
+"data-source-target"인 빈아이디가야지
+디비연결이니 해준다
+mem_name에 원하는 값이 들어오고 그 값을
+Dao에서 로직으로 로직에서도 또 담아서 컨트롤러로 패스
+
+
+
+
+
+
+
+

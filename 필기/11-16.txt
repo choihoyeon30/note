@@ -1,0 +1,39 @@
+5번 6번 비교
+
+2번 json처리
+
+forward의 req★
+
+if문 태우기
+
+
+
+SCOPE
+
+page: default값이지만 쓰뤠기다
+
+request : 요청한동안만 값 유지
+
+session : 내가 지정한 시간동안 값 유지
+
+application : 서버가 꺼지기 전까지는 계속 유지
+
+
+
+List<Map<String,Object>> empInfo = new ArrayList<>();  //테이블과 같은 리스트
+Map<String,Object> remp = new HashMap<>();  //테이블의 로우와 같음
+
+
+RequestDispatcher는 사용자의 원래요청을 다른 서블릿이나 JSP에 전달한다.
+----------------------------------------------------------------------------
+
+$(document).ready(function(){ 는 DOM트리가 완성된 후 실행 된다는 뜻
+1.url타기
+2. .kos 서블릿이 뺏어감
+
+
+
+====================================================
+
+
+

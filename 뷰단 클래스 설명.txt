@@ -1,0 +1,125 @@
+화면에 보여주는 페이지
+-------------------member----------------------------------
+index 메인 페이지
+joinMembership 회원가입 페이지
+login 로그인 페이지
+finid 아이디 찾기 페이지
+findIdResult 아이디 찾기 결과 페이지
+findpw 비밀번호 찾기 페이지
+findPwResult 비밀번호 찾기 결과 페이지
+loginIndex 로그인이 완료된 페이지
+
+------------------navbar에 있는 내용 페이지 ----------------------------
+todayRecipe 오늘의 추천레시피 페이지
+ranking 랭킹페이지
+cookingClass 쿠킹클래스페이지
+
+---------------------admin-----------------------------
+adminIndex 관리자 메인 페이지
+recipeControl 레시피 관리 페이지
+cookingClassControl 쿠킹클래스 관리 페이지
+memberControl 회원관리 페이지
+
+
+
+
+
+include파일
+---------------------index-----------------------------
+header 헤더 공통처리 부분
+navbar navbar부분
+carousel navbar아래있는 캐러셀 부분
+content index에 있는 신규레시피 부분
+content2 index에 있는 인기 레시피 부분
+carousel2 인기셰프 캐러셀
+footer 푸터 공통 처리 부분
+
+---------------------joinMembership-----------------------------
+loginHeader 로그인 할때나 회원가입 할때 아이디비번찾을때 로고만 있는 공통 헤더 부분
+jmContent 회원가입 정보 입력하는 폼이 있는 부분
+footer 푸터 공통 처리 부분
+
+---------------------login -----------------------------
+loginHeader 로그인 할때나 회원가입 할때 아이디비번찾을때 로고만 있는 공통 헤더 부분
+loginContent 아이디 비밀번호 로그인, 아이디 찾기, 비밀번호 찾기 버튼등이 있는 부분
+kakaoLogin 카카오 로그인 api 부분
+footer 푸터 공통 처리 부분
+
+---------------------finid -----------------------------
+loginHeader 로그인 할때나 회원가입 할때 아이디비번찾을때 로고만 있는 공통 헤더 부분
+navbar navbar부분
+findIdContent 이름 생년월일 작성하는 부분
+footer 푸터 공통 처리 부분
+
+---------------------findIdResult -----------------------------
+loginHeader 로그인 할때나 회원가입 할때 아이디비번찾을때 로고만 있는 공통 헤더 부분
+navbar navbar부분
+findIdResultContent 아이디 찾기 결과를 보여주는 부분
+footer 푸터 공통 처리 부분
+
+---------------------findPw -----------------------------
+loginHeader 로그인 할때나 회원가입 할때 아이디비번찾을때 로고만 있는 공통 헤더 부분
+navbar navbar부분
+findPwContent 이름 아이디 전화번호 작성하는 부분
+footer 푸터 공통 처리 부분
+
+---------------------findPwResult -----------------------------
+loginHeader 로그인 할때나 회원가입 할때 아이디비번찾을때 로고만 있는 공통 헤더 부분
+navbar navbar부분
+findIdResultContent 비밀번호 찾기 결과를 보여주는 부분
+footer 푸터 공통 처리 부분
+
+---------------------loginIndex -----------------------------
+loginOkHeader 로그인이 완료된 공통헤더 부분
+navbar navbar부분
+carousel navbar아래있는 캐러셀 부분
+content index에 있는 신규레시피 부분
+content2 index에 있는 인기 레시피 부분
+carousel2 인기셰프 캐러셀
+footer 푸터 공통 처리 부분
+
+---------------------todayRecipe -----------------------------
+header 헤더 공통처리 부분
+navbar navbar부분
+today1 아작스 처리가 되는 내용 부분 이 부분만 바뀌게 된다(ex today2, today3..)
+footer 푸터 공통 처리 부분
+
+---------------------ranking -----------------------------
+header 헤더 공통처리 부분
+navbar navbar부분
+rankingChefContent 아작스 처리가 되는 내용부분 이 부분만 바뀌게 된다(ex rankingRecipeContent)
+footer 푸터 공통 처리 부분
+★chefDetail, recipeDetail 다이얼로그 부분 
+
+---------------------cookingClass -----------------------------
+header 헤더 공통처리 부분
+navbar navbar부분
+cookingClassRegisterContent 아작스 처리가 되는 내용부분 이 부분만 바뀌게 된다(ex cookingClassSignUpContent)
+footer 푸터 공통 처리 부분
+
+---------------------adminIndex -----------------------------
+adminHeader 관리자 헤더 공통처리 부분
+navbar navbar부분
+carousel navbar아래있는 캐러셀 부분
+content index에 있는 신규레시피 부분
+content2 index에 있는 인기 레시피 부분
+carousel2 인기셰프 캐러셀
+footer 푸터 공통 처리 부분
+
+---------------------recipeControl -----------------------------
+adminHeader 관리자 헤더 공통처리 부분
+navbar navbar부분
+recipeControlContent 레시피 관리 내용 부분
+footer 푸터 공통 처리 부분
+
+---------------------cookingClassControl -----------------------------
+adminHeader 관리자 헤더 공통처리 부분
+navbar navbar부분
+cookingClassControlContent 쿠킹클래스 관리 내용 부분
+footer 푸터 공통 처리 부분
+
+---------------------memberControl -----------------------------
+adminHeader 관리자 헤더 공통처리 부분
+navbar navbar부분
+memberControlContent 회원관리 내용 부분
+footer 푸터 공통 처리 부분

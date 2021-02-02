@@ -1,0 +1,22 @@
+화면 타입 3가지
+
+A타입 -부모창
+
+boardList.jsp -> writeForm.jsp
+
+<script>
+    function method(){}
+</script>
+
+B타입 -팝업창(A타입의 자식창)
+
+opener.location.href="javascript:method()"
+
+opener.location.href="XXX.jsp|XXX.sp|XXX.html"
+
+C타입 - Modal창
+
+A와 B의 차이점 - 소스가 하나다!
+자바스크립트 변수를 공유
+함수를 공유 - 호출
+

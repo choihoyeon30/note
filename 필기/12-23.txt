@@ -1,0 +1,34 @@
+MainActivity - activity_main.xml
+
+OrderActivity - activity_order.xml  -주문서작성구성, 플로팅버튼
+
+UPButton추가하기
+	ActionBar actionBar = getSupportActionBar();
+	actionBar.setDisplayShowHomeEnabled(true);
+툴바사용
+
+Toolbar toolbar = findViewById(R.id.toolbar);
+setSupportActioBar(toolbar);
+
+두개 페이지를 부모와 자식 페이지 구성
+
+AndroidManifest.xml
+<activity android:name=".OrderActivity" 
+android:parentActivityName=".MainActivity">
+
+장점: 여러개의 복잡한 액티비티 사이에서 한번에 부모페이지로 이동
+
+toolbar_main.xml
+
+menu - menu_main.xml
+
+PizzaApp2020Ver1.apk
+
+
+PizzaApp2020Ver2.apk
+
+
+PizzaApp2020Ver3.apk
+
+
+PizzaApp2020Ver4.apk

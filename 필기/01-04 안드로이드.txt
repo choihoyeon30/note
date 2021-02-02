@@ -1,0 +1,63 @@
+하이브리드앱 개발해 보기
+
+웹앱 + 네이티브 앱
+
+웹앱:단독으로 실행불가(인터넷연결) - 핸드폰에 있는 카메라기능등을 제어하거나 활용불가
+웹앱에서는 권한에 대한 설정, 인증key 발급이 불가함!(하드웨어가 있어야 가능하기때문에 인증키 발급 웹앱에서 불가능)
+
+네이티브앱(카메라기능, 위치기능, 근거리통신망...) - 구글 스토어 등록가능
+단말기에서 지원하는 NoSQL같은 제품을 사용할 수 있다.(SQLite-로컬DB 활용가능함.)
+
+
+
+액티비티 생명주기 -라이프사이클(서블릿 init-service-destroy)
+
+액티비티 시작 - 액티비티 실행 - 액티비티 종료
+onCreate() - onStart() - onResume() - onPause() - onStop() - onDestroy()
+
+액티비티가 생성되고 파괴될 때 어떤 일이 일어나는지?
+액티비티의 상태를 저장하고 복원하는 방법에 대해서 궁금궁금!
+라이프사이클을 이해하면 끼어드는 순간을 포착해서 그 중간에서 뭔가 관여할 수 있지 않을까?!
+
+
+
+작업일지
+1. 프로젝트 등록
+
+2. 안드로이드X버전으로 컨버전
+
+3. 화면정의(시간정보:TextView, 시작, 정지, 리셋 버튼 추가)
+
+4. 매초 seconds에 대한 변수 값 증가시키고 텍스트뷰를 갱신할 수 있도록 반복수행시킴.
+문제! 메인스레드와 UI스레드가 별개이므로 메인스레드에서 UI를 조작하는 것이 불가능하다!
+Thread구현 - Volley API(로그인, 영화정보 조회)
+핸들러로 코드 실행을 계획할 수 있다.
+특정코드를 미래 시점에 수행할 수 있음.
+핸들러로 매초 스톱워치 코드가 실행되어야 함.
+
+MainActivity가 메인 스레드이므로 이 내부에서는 UI조작할 수 있다.
+시간지연, 시간멈춤, ....시간 제어하고 싶을 때도 스레드 개념 필요
+
+
+
+즉시 실행할 때 - post()
+
+final Handler handler = new Handler();
+handler.post(Runnable);
+
+미래에 실행 시킬 때 - postDelay(스레드, long)
+
+class ChatServerThread extends Thread
+
+Thread th = new ChatServerThread();
+th.start();
+start()를 호출하더라도 순서에 따라 실행됨.
+대기방이 존재 한다.
+순서를 따져서 th.yield();
+	      th.sleep(1000);
+	      th.wait();
+	      th.notify();
+run()호출됨.
+
+class ChatServerThread implements Runnable
+

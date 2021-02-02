@@ -1,0 +1,31 @@
+프레임워크 사용시 페이지의 배포 위치
+페이지의 이동을 콜하는 것은 BoardController에 몫
+메소드의 파라미터 타입의 값에 따라 달라짐.
+
+void - req, res가 반드시 있어야함
+res.sendRedirect("XXX,jsp") - web/board
+ModelAndView - req, res가 반드시 있어야함. -WEB-INF/views/board forward의 성격, url 접근 불가함.
+
+String - req, res가 없어도 괜찮아~
+
+return "redirect:XXX.jsp|XXX.do" 
+return "forward:XXX.jsp"
+
+return "board/boardList"와 같이 하면 ModelAndView와 동일한 위치
+
+webapp/board/
+
+
+WEB-INF/views/board/
+
+
+ECMAScript2015버전 스터디 3school.com
+ES5, ES6문법 체크!
+React.js 와 스프링 연동하기
+Vue.js(js기반) - 뷰에 대한 템플릿 - 네이버카페처럼 2단구성, 3단구성 템플릿으로 빠르고 쉽게 그릴 수 있도록 제공
+TypeScript 지원 - 자바 스크립트 포함하는 스크립트이다.
+정리된 자바스크립트 코딩지원
+타입 체크해줌
+객체지원 다양함.
+
+Front-End

@@ -1,0 +1,68 @@
+넥사크로와 html 비벼서 사용할 수 있나?
+
+안드로이드와 jsp공존하게 할 수 있나?
+변수 - 배열(고정, 상수, 같은타입) - 객체배열(유동[List<VO>], 다른타입까지도)
+- List(인덱스, 순서(속도느리다),) - Map(중복가능, 순서가없다 , 그러니까 속도가 빠르다)
+- 시간을 제어할 수 없다 - 이를 해결하는게 쿠키와 세션이다.
+
+주의사항 : 쿠키같은 경우는 반드시 페이지에 대한 요청이 있어야 반영됨.
+	  주소창이 바뀌어야 반영됨.
+	  text형태
+	  List와 Map, xxxVO, xxxVOS[]안된다
+	  세션같은 경우 용량 제한 - 서버에 cache관리가 되기 때문에
+
+안드로이드에서 쿠키와 세션을 사용할 수 있나요?
+1)NO!!! - 네이티브앱에서는 No!(네이티브 앱은 로컬에서 진행 -> 하드웨어(핸드폰 단말기)지원받는다(ex: 카메라, 비콘, QR)
+2)YES!! - 하이브리드앱 - 모바일앱(==웹앱)
+
+html내에서 form전송이 일어나면 요청의 변화로 기존의 돔은 리셋되고
+새로운 돔구성이 발생함.
+
+쿠키와 세션 - 시간
+
+오라클 - 데이터영속성
+
+
+spring-core.jar -스프링 기반의 프레임워크(전자정부 프레임워크 , AnyFramWork)
+빈공장운영
+beanFactory - spring-beans.jar
+ApplicationContext - spring-context.jar
+
+위에 두개가 주입이 되어야
+@Bean
+public DeptController setDeptController(){
+	return new DeptController();
+}
+<bean id="" class="com.mvc.DeptController"/>
+이런것들을 쓸 수 있다.
+
+db연동, JDBC
+spring - jdbc.jar
+mybatis.jar
+mybatis-spring.jar SqlSessionFactoryBean.java - 커넥션을 맺는다.
+SqlSessionTemplate.java - selectOne, insert, update, delete, 프로시저
+SELECT func_method() FROM dual
+trigger 개발자가 호출하거나 불러서 처리하는것이 아니다.
+트리거는 활성화 시키거나 비활성화 시키거나 이다
+
+트랜잭션처리
+spring-tx.jar
+spring-aop.jar
+
+스프링MVC
+spring-webmvc.jar
+spring-web.jar
+
+스프링 설정 방법
+1.자바 - 어노테이션 ㅋ이건 너무 수동
+
+@Configuration
+class A{}
+
+2.XML으로 설정하기(전자정부, 넥사크로) ㅋ최적 반자동ㅋ
+:최적이다.
+:firebase, nexacro 이종간 시스템 연계, 연동 - 안전하다.
+근거:XXX.jar내가 직접 관리 할 수 있으니까~, 아직 최신의 모듈을 지원받지 못하고 있으니까
+
+3.BOOT로 설정 ㅋ이건 너무 자동
+:이종간에 의존성 주입에서 트러블이 발생할 가능성이 높은 편
